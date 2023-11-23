@@ -9,10 +9,10 @@
 
 # Usage
 ```
-ValidatorFactory.ValidateResult result = new ValidatorFactory().createValidator("hello").validIsNotEmpty().getResult();
+VariValidateResult result = new VariValidatorFactory().createValidator("hello").validIsNotEmpty().getResult();
 System.out.println(result.isValid()); // true
 
-ValidatorFactory.ValidateResult result1 = new ValidatorFactory().createValidator("").validIsNotEmpty().getResult();
+VariValidateResult result1 = new VariValidatorFactory().createValidator("").validIsNotEmpty().getResult();
 System.out.println(result1.isValid()); // false
 System.out.println(result1.messages()); // [対象が空です]
 ```
