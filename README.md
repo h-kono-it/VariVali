@@ -19,13 +19,13 @@ System.out.println(result1.messages()); // [対象が空です]
 
 ## Validators
 - NotEmpty
-- Length
-- Date
-- DateTime
-- DateLimit
-- Number
-- NumberLimit
-- Enum
+- Length(WIP)
+- Date(WIP)
+- DateTime(WIP)
+- DateLimit(WIP)
+- Number(WIP)
+- NumberLimit(WIP)
+- Enum(WIP)
 
 ... and You can implement Custom Validator.
 
