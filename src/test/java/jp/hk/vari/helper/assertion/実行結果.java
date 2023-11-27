@@ -49,9 +49,11 @@ public class 実行結果<T> {
     }
     assertTrue(false, "実行結果はbooleanではなく" + actual.toString() + "でした。");
   }
+
   public void はtrueです(String message) {
     はtrueです(() -> message);
   }
+
   public void はtrueです(Supplier<String> messageSupplier) {
     if (this.actual instanceof Boolean b) {
       assertTrue(b, messageSupplier);
@@ -67,9 +69,11 @@ public class 実行結果<T> {
     }
     assertFalse(true, "実行結果はbooleanではなく" + actual.toString() + "でした。");
   }
+
   public void はfalseです(String message) {
     はfalseです(() -> message);
   }
+
   public void はfalseです(Supplier<String> messageSupplier) {
     if (this.actual instanceof Boolean b) {
       assertFalse(b, messageSupplier);
